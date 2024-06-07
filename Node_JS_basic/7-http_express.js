@@ -24,7 +24,7 @@ async function countStudents(path) {
     });
 
     return result;
-  } catch {
+  } catch (error) {
     throw new Error("Cannot load the database");
   }
 }
